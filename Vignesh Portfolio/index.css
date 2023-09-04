@@ -610,7 +610,7 @@ form{
 }
 input,textarea{
     border: 1px solid #0ef;
-    width: 200%;
+    width: 210%;
     outline: 0;
     color: #fff;
     padding: 10px;
@@ -631,7 +631,8 @@ label{
     left:0;
     color: orange;
     transition: 0.4s;
-    padding-left: 40px;
+    margin-left:20%;
+    width: 100%;
 }
 button{
     border: 1px solid #0ef;
@@ -662,11 +663,11 @@ textarea:focus~label,
 textarea :valid~label
 { 
       top: -18px;
-    font-size: 13px;
+    font-size: 12px;
     background: #1f242d;
     padding: 5px;
     border-radius: 10px;
-    left: 30px;
+    left:3px;
 }
 .right p{
     font-size: 20px;
@@ -690,6 +691,7 @@ textarea :valid~label
 }
 iframe{
     margin-left: 250px;
+    width: 250px;
 }
 .right h3{
     font-size: 20px;
@@ -699,4 +701,204 @@ iframe{
     text-align: left;
     margin-left: 200px;
     letter-spacing: 2px;  
+}
+@media (max-width:850px){
+    nav{
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding: 0;
+        height: auto;
+        width: 200vw;
+    }
+    nav li{
+        padding-left: 8px;
+    }
+    nav li:hover{
+    transform: translateY(-3px);
+    }
+    nav li a{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .logo h1 a{
+  
+        font-size:25px;
+    }
+    .hire{
+        font-size: 21px;
+        letter-spacing: 0;
+        padding: 4px 8px;
+    }
+    .hire:hover{
+        background:#fff;
+        border: 2px solid #0ef;
+        color: orange;
+    }
+    .hire .bxs-user-circle{
+        font-size: 20px;
+        padding-right: 4px;
+        color: #1f242d;
+    } 
+    /*Home*/
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 200vw;
+        margin-top: 80px;
+        align-items: center;
+        text-align: center;
+    }
+    .contents{
+        margin-top: 100px;
+    }
+    .contents h3{
+        font-size: 20px;
+        font-weight:400;
+    }
+    .contents h1{
+        font-size: 40px;
+        font-weight:400;
+    }
+    .contents h3 span{
+        color: #0ef;
+    }
+    .contents p{
+        font-size: 12px;
+        margin-top:20px;
+    }
+    .social-meadia a{
+           
+            height: 20px;
+            width: 20px;
+            font-size: 10px;
+    }
+    /*Education*/
+    #Education{
+        width: 200vw;
+        margin:0;
+        margin-top: 60px;
+    }
+    .Heading h1{
+        padding-bottom: 20px;
+        padding-top: 40px;
+        letter-spacing: 10px;
+    }
+    .flex{
+        margin: 10px 0;
+        flex-direction: column;
+    }
+  /*Skills*/
+  #skils{
+    width: 200vw;
+    margin:0px;
+    margin-top: 70px;
+   }
+   .html::after
+   {
+    margin-left:150%;
+    }
+    .css::after
+    {
+     margin-left:150%;
+     }
+     .java::after
+     {
+      margin-left:150%;
+      }
+      .sql::after
+      {
+       margin-left:150%;
+       }
+       .canva::after
+       {
+        margin-left:150%;
+        }
+  /*Projects*/
+  #Projects{
+    width: 200vw;
+    margin:0;
+    margin-top: 70px;
+    }
+    .project-box{
+    display: block;
+    }
+    .project-box img{
+    width: 100%;
+    }
+    .pro-content h1{
+    font-size: 40px;
+    }
+    .pro-content h3{
+    font-size: 30px;
+    }
+    .span,.span a,.pro-content p{
+     font-size: 20px;
+    }
+    /*Contact*/
+    #Contact{
+        width: 200vw;
+        margin:0;
+        margin-top:70px;
+        padding:0px;
+        text-align: center;
+    }
+    .contact{
+        width:auto;
+        margin: 0px 50px;
+        background: #1f242d;
+        border-radius:15px ;
+    }
+    .contact h1{
+        padding:0;
+        text-align: center;
+        padding-left:0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }   
+    .cotact-content{
+        display: block;
+        justify-content:center;
+    }
+    form{
+        width:100%;
+    }
+    input,textarea{
+        width: 75%;
+        margin-left: 0PX;
+    }
+    label{
+        margin-left:10%;
+        padding-left: 0;
+        width: 25%;
+    }
+    button{
+        width: 75%;
+        margin-bottom: 0px;
+        margin-left:0px;
+    }
+    .right p{
+        font-size: 25px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .right h1{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .right{
+        margin-bottom: 0px;
+    }
+    iframe{
+        margin-left:0px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    .right h3{
+        font-size: 30px;
+        margin-left: 0px;
+        text-align: center;
+    }
 }
